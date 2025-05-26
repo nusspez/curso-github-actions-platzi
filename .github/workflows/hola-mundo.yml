@@ -3,7 +3,7 @@
 name: Saludo Sencillo
 
 # Evento que dispara el workflow
-on:
+on: [push]
 
 # Trabajos que se ejecutarán
 jobs:
