@@ -1,0 +1,22 @@
+# .github/workflows/saludo.yml
+
+name: Saludo Sencillo
+
+# Evento que dispara el workflow
+on: [push]
+
+# Trabajos que se ejecutarán
+jobs:
+  decir_hola:
+    # El tipo de runner donde se ejecutará el job
+    runs-on: ubuntu-latest
+
+    # Pasos que componen el job
+    steps:
+      # Paso 1: Imprimir un mensaje en la consola
+      - name: Imprimir Saludo
+        run: echo "¡Hola Mundo desde GitHub Actions!"
+
+      # Paso 2: Imprimir otro mensaje
+      - name: Mostrar Fecha
+        run: date
